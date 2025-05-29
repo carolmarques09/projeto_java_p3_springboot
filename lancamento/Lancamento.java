@@ -38,11 +38,11 @@ public class Lancamento {
     public TipoLancamento tipo;
 
     @ManyToOne
-    @JoinColumn(name = "categoria_id")
+    @JoinColumn(name = "categoria")
     public Categoria categoria;
 
     @ManyToOne
-    @JoinColumn(name = "pessoa_id")
+    @JoinColumn(name = "pessoa")
     public Pessoa pessoa;
 
     public Lancamento(DadosCadastroLancamento dados) {
